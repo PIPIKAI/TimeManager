@@ -49,7 +49,6 @@ fun StartPageView(appNavController: NavHostController? = null) {
             contentVisible = true
             delay(550)
             appNavController?.navigate(APPRoute.MAIN_NAV)
-
         }
         AnimatedVisibility(
             visible = contentVisible,

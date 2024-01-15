@@ -17,12 +17,12 @@ class MainActivity : ComponentActivity() {
         setContent {
             TimeManagerTheme {
                 val appNavController = rememberNavController()
-                NavHost(navController = appNavController, startDestination =  APPRoute.START_SCREEN){
+                NavHost(navController = appNavController, startDestination = APPRoute.MAIN_NAV) {
                     // 添加你的路由
-                    composable(APPRoute.START_SCREEN){
+                    composable(APPRoute.START_SCREEN) {
                         StartPageView(appNavController)
                     }
-                    composable(APPRoute.MAIN_NAV){
+                    composable(APPRoute.MAIN_NAV) {
                         MainNavView()
                     }
                 }
